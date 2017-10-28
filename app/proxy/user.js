@@ -32,3 +32,15 @@ exports.getUserById=function(id,cb){
 	User.findOne({_id:id},cb);
 
 }
+
+
+exports.getUsersByNames = function (names, callback) {
+  if (names.length === 0) {
+    return callback(null, []);
+  }
+  User.find({ loginname: { $in: names } }, callback);
+};
+
+
+
+

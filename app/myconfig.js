@@ -4,6 +4,7 @@ var config={
 	name:"guokai",
 	auth_cookie_name:"myclub",
 	rootdir:rootdir,
+	list_topic_count:20,
 	host:"localhost:3000",
 	tabs: [
 	    ['share', '分享'],

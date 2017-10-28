@@ -38,6 +38,6 @@ router.get('/topic/create', auth.userRequired, topic.create);
 
 router.post('/topic/create', auth.userRequired, limit.peruserperday('create_topic', myconfig.create_post_per_day, {showJson: false}), topic.put);
 
-
+router.get('/topic/:tid', topic.index);  // 显示某个话题
 
 

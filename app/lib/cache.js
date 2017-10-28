@@ -12,10 +12,11 @@ var get=function(key,cb){
 		if(!data){
 			return cb();
 		}
+		console.log(data,"count");
 		data = JSON.parse(data);
 		var duration = (new Date() - t);
 		logger.debug('Cache', 'get', key, (duration + 'ms').green);
-		callback(null, data);
+		cb(null, data);
 	})
 }
 
@@ -32,6 +33,7 @@ var set = function (key, value, time, callback) {
 	  }	 
 	 callback = callback || _.noop;
 	 value = JSON.stringify(value);
+	 console.log("is puted "+value+"times");
 	 if (!time) {
 	 	redis.set(key, value, callback);
 	 }else{
