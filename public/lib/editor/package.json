@@ -1,0 +1,40 @@
+{
+  "name": "editor",
+  "version": "0.1.0",
+  "description": "A minimalistic html editor",
+  "main": "build/editor.min.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "jquery": ">=1.7.0"
+  },
+  "devDependencies": {
+    "grunt": "",
+    "grunt-contrib-clean": "",
+    "grunt-contrib-concat": "",
+    "grunt-contrib-cssmin": "",
+    "grunt-contrib-jshint": "",
+    "grunt-contrib-sass": "",
+    "grunt-contrib-uglify": "",
+    "grunt-contrib-watch": ""
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/znck/editor.git"
+  },
+  "author": "Rahul Kadyan <mail@rahulkadyan.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://znck.mit-license.org"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/znck/editor/issues"
+  },
+  "homepage": "https://github.com/znck/editor"
+}
